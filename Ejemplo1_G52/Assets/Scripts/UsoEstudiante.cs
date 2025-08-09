@@ -3,15 +3,15 @@ using System;
 using packagePersona;
 using System.Collections.Generic;
 
-
+[Serializable]
 
 public class UsoEstudiante : MonoBehaviour
 {
+    [SerializeField]
+    public List<Estudiante> listaE= new List<Estudiante>();
 
-    List<Estudiante> listaE=new List<Estudiante>();
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         Estudiante e1 = new Estudiante("2025_03" , "Ing multimedia", "David Castro", "dacastro@uao.edu.co",
@@ -31,9 +31,6 @@ public class UsoEstudiante : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+    
 }

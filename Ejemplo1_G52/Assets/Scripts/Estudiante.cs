@@ -7,8 +7,8 @@ namespace packagePersona{
 
     public class Estudiante : Persona
     {
-        private string codeE;
-        private string nameCarreraE;
+        public string codeE;
+        public string nameCarreraE;
 
         public Estudiante()
         {
